@@ -6,7 +6,7 @@ on:
 
 jobs:
     lab-job:
-        run-ons: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Start job
               run: echo 'Hello DevOps'
@@ -15,7 +15,7 @@ jobs:
             - name: Third Step
               run: echo 'This is third step'
     second-job:
-        run-ons: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Start job
               run: echo 'second job'
