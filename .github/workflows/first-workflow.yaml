@@ -1,0 +1,14 @@
+name: Fitst workflow
+on:
+  push:
+    branches:
+        - "main"
+
+jobs:
+    lab-job:
+        run-ons: ubuntu-latest
+        steps:
+            - name: Start job
+              run: echo 'Hello DevOps'
+            - name: Second Step
+              run: echo 'This is second step'
