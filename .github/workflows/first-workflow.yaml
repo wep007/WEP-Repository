@@ -14,3 +14,8 @@ jobs:
               run: echo 'This is second step'
             - name: Third Step
               run: echo 'This is third step'
+    second-job:
+        run-ons: ubuntu-latest
+        steps:
+            - name: Start job
+              run: echo 'second job'
