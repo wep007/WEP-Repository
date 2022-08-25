@@ -1,0 +1,12 @@
+name: Lab04
+on:
+  push:
+    branches:
+        - "main"
+jobs:
+    prepare:
+        run-ons: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-dotnet@v2
+            - run: dotnet --info
